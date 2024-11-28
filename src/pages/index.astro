@@ -10,6 +10,9 @@ const TheDay = new Date("Dec 21, 2024").getTime();
 ---
 
 <Layout title="MyPertamina Fair 2024">
+  <!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
+
+
   <NavbarHome client:load />
   <div class="prose prose-lg overflow-x-hidden mt-16 max-w-4xl mx-auto">
     <!-- Hero Section -->
@@ -18,7 +21,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
       <h1 class="sr-only">MyPertamina Fair 2024</h1>
       <Image
         src={HeroFig}
-        class="max-w-full mx-auto my-0 md:w-[560px]"
+        class="max-w-full mx-auto my-0 md:w-[560px] animate__animated animate__backInLeft"
         alt="Hero"
         loading="eager"
       />
@@ -49,6 +52,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
   </div>
   <!-- Countdown -->
   <section class="bg-pertamina-red-500">
+    <h1 data-aos="fade-in" data-aos-delay="300">Astro</h1>
     <div id="countdown">
       <CountDown client:load newYear={TheDay} />
     </div>
@@ -63,7 +67,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
         Informasi
       </h2>
       <div class="grid grid-cols-3 gap-4">
-        <div class="flex justify-center mb-8">
+        <div class="flex justify-center animate_animated animate__tada mb-8">
           <a
             href="/festival#bazaar"
             class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
@@ -80,7 +84,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
             </p>
           </a>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center animate_animated animate__tada">
           <a
             href="/festival#actvityzone"
             class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
@@ -97,7 +101,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
             </p>
           </a>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center animate_animated animate__tada">
           <a
             href="/festival"
             class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
@@ -114,7 +118,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
             </p>
           </a>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center animate_animated animate__tada">
           <a
             href="/point-frenzy"
             class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
@@ -131,7 +135,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
             </p>
           </a>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center animate_animated animate__tada">
           <a
             href="/venue-map"
             class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
@@ -148,7 +152,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
             </p>
           </a>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center animate_animated animate__tada">
           <a
             href="/faq"
             class="no-underline hover:text-pertamina-red-500 active:text-pertamina-red-600"
@@ -164,4 +168,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
       </div>
     </div>
   </section>
+<script>
+
+</script>
 </Layout>
