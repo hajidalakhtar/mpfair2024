@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavbarGeneral from "../components/NavbarGeneral.jsx";
+import Image from "astro/components/Image.astro";
+import CtaAppStore from "../assets/cta-appstore.png";
+import CtaGooglePlay from "../assets/cta-googleplay.png";
+import QRCode from "../assets/qr-code.png";
+import "../styles/global.css";
+---
+
+<Layout title="Tiket">
+  <NavbarGeneral client:load />
+  <main class="prose prose-lg overflow-x-hidden mt-16 max-w-4xl mx-auto">
+    <!-- Tiket Section -->
+    <section id="festival" class="pt-16 px-4 mb-32">
+      <h1
+        class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
+      >
+        Tiket
+      </h1>
+      <div
+        class="bg-white py-8 px-4 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+      >
+        <h2
+          class="text-center font-raleway text-[1.125rem] font-extrabold leading-[130%] mt-0"
+        >
+          Dapatkan Tiketnya di Aplikasi MyPertamina
+        </h2>
+        <ol
+          class="font-cabin text-[1rem] font-normal leading-[170%] mb-0 md:text-center md:list-inside"
+        >
+          <li class="my-0">Install aplikasi <strong>MyPertamina</strong></li>
+          <li class="my-0">Buka menu E-Voucher</li>
+          <li class="my-0">Pilih event MyPertamina Fair 2024</li>
+        </ol>
+        <div class="hidden md:flex justify-center">
+          <Image class="size-56" src={QRCode} alt="QR Code" />
+        </div>
+        <div class="flex justify-center gap-8 px-2">
+          <div>
+            <a
+              href="https://apps.apple.com/id/app/mypertamina/id1295039064?l=id"
+            >
+              <Image
+                class="w-full md:w-40 hover:shadow-lg active:shadow-xl"
+                src={CtaAppStore}
+                alt="CTA AppStore"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.dafturn.mypertamina&hl=id"
+            >
+              <Image
+                class="w-full md:w-40 hover:shadow-lg active:shadow-xl"
+                src={CtaGooglePlay}
+                alt="CTA Google Play"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
