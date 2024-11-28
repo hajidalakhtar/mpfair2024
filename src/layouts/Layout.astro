@@ -1,5 +1,4 @@
 ---
-import "aos/dist/aos.css"; // AOS styles
 
 interface Props {
     title: string;
@@ -76,7 +75,7 @@ const {title} = Astro.props;
     }
 
     #content {
-        text-align: center;
+        //text-align: center;
         display: none;
     }
 
@@ -93,15 +92,8 @@ const {title} = Astro.props;
     <!--<p>Loading...</p>-->
 </div>
 <div id="content">
-
     <slot/>
 </div>
-<script>
-    import { aosInit } from "../js/aos";
-
-    // runs on initial page load
-    aosInit();
-</script>
 <script is:inline>
     const loadingScreen = document.getElementById('loading-screen');
     const content = document.getElementById('content');
