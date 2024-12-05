@@ -12,7 +12,7 @@ const HamburgerMenu = () => {
       <div className="navbar bg-white shadow-md flex w-full p-[0.875rem_1rem_1.125rem_1rem] justify-between items-center fixed top-0 left-0 z-50">
         <a href="/" className="brand-logo">
           <img
-            src="/mypertaminafair-logo.svg"
+            src="/dist/mypertaminafair-logo-new.png"
             alt="Brand Logo"
             className="h-9"
           />
