@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import NavbarHome from "../components/NavbarHome.jsx";
+import "../styles/global.css";
+import HeroFig from "../assets/cooming-soon-01.png";
+import CountDown from "../components/Countdown";
+
+const TheDay = new Date("Dec 21, 2024").getTime();
+---
+
+<Layout title="MyPertamina Fair 2024">
+  <NavbarHome client:load />
+  <div class="fixed-bg"></div>
+
+  <div class="prose prose-lg overflow-x-hidden max-w-4xl mx-auto" style="margin-top: 130px">
+    <!-- Hero Section -->
+    <section class="pt-16 md:pt-14 mb-40">
+      <!-- Hidden -->
+      <h1 class="sr-only">MyPertamina Fair 2024</h1>
+      <Image
+          src={HeroFig}
+          class="max-w-full mx-auto my-0 md:w-[560px]  "
+          alt="Hero"
+          loading="eager"
+      />
+      <div class="flex flex-col items-center px-12 md:max-w-md mx-auto" style="margin-top: 60px">
+        <a
+            href="/"
+            class="block w-full py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
+        >
+          Kembali
+        </a>
+        <!--<a href="#countdown" class="scroll-smooth">-->
+        <!--  <img src="/arrow-down.svg" alt="Scroll Down" class="mt-4 mb-0" />-->
+        <!--</a>-->
+      </div>
+    </section>
+  </div>
+
+</Layout>
