@@ -19,353 +19,375 @@ import ActivtyWorkshop from "../assets/workshop.jpg";
 ---
 
 <Layout title="Festival">
-  <NavbarGeneral client:load />
-  <div class="fixed-bg"></div>
+    <NavbarGeneral client:load/>
+    <div class="fixed-bg"></div>
 
-  <main class="prose prose-lg overflow-x-hidden mt-16 max-w-4xl mx-auto">
-    <!-- Artist Lineup-->
-    <section class="pt-14 px-4">
-      <h1
-        class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
-      >
-        Festival
-      </h1>
+    <main class="prose prose-lg overflow-x-hidden mt-16 max-w-4xl mx-auto">
+        <!-- Artist Lineup-->
+        <section class="pt-14 px-4">
+            <h1
+                    class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
+            >
+                Festival
+            </h1>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-        <div class="flex justify-center animate__animated animate__tada">
-          <Image
-            src={ArtistDmasiv}
-            alt="Artist D'Masiv"
-            class="w-40 h-40 my-0"
-          />
-        </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <Image src={ArtistRan} alt="Artist RAN" class="w-40 h-40 my-0" />
-        </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <Image
-            src={ArtistThechangcuters}
-            alt="Artist RAN"
-            class="w-40 h-40 my-0"
-          />
-        </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <Image src={ArtistTypex} alt="Artist RAN" class="w-40 h-40 my-0" />
-        </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <Image
-            src={ArtistFeelkoplo}
-            alt="Artist RAN"
-            class="w-40 h-40 my-0"
-          />
-        </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <Image src={ArtistNdarboy} alt="Artist RAN" class="w-40 h-40 my-0" />
-        </div>
-      </div>
-    </section>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                <div class="flex justify-center animate__animated animate__tada">
+                    <Image
+                            src={ArtistDmasiv}
+                            alt="Artist D'Masiv"
+                            class="w-40 h-40 my-0"
+                    />
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <Image src={ArtistRan} alt="Artist RAN" class="w-40 h-40 my-0"/>
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <Image
+                            src={ArtistThechangcuters}
+                            alt="Artist RAN"
+                            class="w-40 h-40 my-0"
+                    />
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <Image src={ArtistTypex} alt="Artist RAN" class="w-40 h-40 my-0"/>
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <Image
+                            src={ArtistFeelkoplo}
+                            alt="Artist RAN"
+                            class="w-40 h-40 my-0"
+                    />
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <Image src={ArtistNdarboy} alt="Artist RAN" class="w-40 h-40 my-0"/>
+                </div>
+            </div>
+        </section>
 
-    <!-- CTA -->
-    <section class="flex flex-col items-center md:max-w-lg mx-auto px-12 mt-12">
-      <a
-        href="/tiket"
-        class="block w-full py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
-      >
-        Beli Tiket
-      </a>
-    </section>
+        <!-- CTA -->
+        <section class="flex flex-col items-center md:max-w-lg mx-auto px-12 mt-12">
+            <a
+                    href="/tiket"
+                    class="block w-full py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
+            >
+                Beli Tiket
+            </a>
+        </section>
 
-    <!-- Bazaar -->
-    <section id="bazaar" class="px-4 mb-12 pt-12">
-      <h2
-        class="text-center font-raleway text-[1.5rem] font-extrabold leading-[130%] m-12"
-      >
-        Bazaar & Market
-      </h2>
-      <!-- F&B -->
-      <div>
-        <h3
-          class="text-center font-raleway text-[1.125rem] font-extrabold leading-[130%] mb-6"
+        <!-- Bazaar -->
+        <section id="bazaar" class="px-4 mb-12 pt-12">
+            <h2
+                    class="text-center font-raleway text-[1.5rem] font-extrabold leading-[130%] m-12"
+            >
+                Bazaar & Market
+            </h2>
+            <!-- F&B -->
+            <div>
+                <h3
+                        class="text-center font-raleway text-[1.125rem] font-extrabold leading-[130%] mb-6"
+                >
+                    F&B
+                </h3>
+
+                <div class="flex flex-wrap justify-center gap-6 md:gap-4">
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!-- Curated Goods & Fashion -->
+            <div class="pt-14">
+                <h3
+                        class="text-center font-raleway text-[1.125rem] font-extrabold leading-[130%] mb-6"
+                >
+                    Curated Goods & Fashion
+                </h3>
+
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Automotive Community -->
+            <div class="pt-14">
+                <h3
+                        class="text-center font-raleway text-[1.125rem] font-extrabold leading-[130%] mb-6"
+                >
+                    Automotive Community
+                </h3>
+
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                    <div class="flex-none">
+                        <img
+                                src="/sponsor-placeholder.svg"
+                                class="w-14 my-0"
+                                alt="sponsor"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Zone -->
+            <div class="pt-14" id="actvityzone">
+                <h3
+                        class="text-center font-raleway text-[1.125rem] font-extrabold leading-[130%] mb-6"
+                >
+                    Activity Zone
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="flex justify-center">
+                        <Image src={ActivtyPlay} alt="Play Zone" class="mt-0 mb-4"/>
+                    </div>
+                    <div class="flex justify-center">
+                        <Image
+                                src={ActivtyAutomotive}
+                                alt="Automotive Zone"
+                                class="mt-0 mb-4"
+                        />
+                    </div>
+                    <div class="flex justify-center">
+                        <Image
+                                src={ActivtyWorkshop}
+                                alt="Workshop Zone"
+                                class="mt-0 mb-4"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA -->
+        <section
+                class="flex flex-col items-center md:max-w-lg mx-auto px-12 mt-12 mb-24"
         >
-          F&B
-        </h3>
+            <a
+                    href="/tiket"
+                    class="block w-full py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
+            >
+                Beli Tiket
+            </a>
+        </section>
+    </main>
 
-        <div class="flex flex-wrap justify-center gap-6 md:gap-4">
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- Curated Goods & Fashion -->
-      <div class="pt-14">
-        <h3
-          class="text-center font-raleway text-[1.125rem] font-extrabold leading-[130%] mb-6"
-        >
-          Curated Goods & Fashion
-        </h3>
+    <script is:inline>
+        setTimeout(() => {
 
-        <div class="flex flex-wrap justify-center gap-6">
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-        </div>
-      </div>
+            if (window.location.hash === '#bazaar') {
+                const element = document.getElementById('bazaar');
+                if (element) {
+                    element.scrollIntoView({behavior: 'smooth'});
+                } else {
+                    console.error("Element with ID 'bazaar' not found");
+                }
+            } else if (window.location.hash === '#actvityzone') {
+                const element = document.getElementById('actvityzone');
+                if (element) {
+                    element.scrollIntoView({behavior: 'smooth'});
+                } else {
+                    console.error("Element with ID 'bazaar' not found");
+                }
+            }
+        }, 2000); // Tambahkan delay kecil
+    </script>
 
-      <!-- Automotive Community -->
-      <div class="pt-14">
-        <h3
-          class="text-center font-raleway text-[1.125rem] font-extrabold leading-[130%] mb-6"
-        >
-          Automotive Community
-        </h3>
-
-        <div class="flex flex-wrap justify-center gap-6">
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-          <div class="flex-none">
-            <img
-              src="/sponsor-placeholder.svg"
-              class="w-14 my-0"
-              alt="sponsor"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- Activity Zone -->
-      <div class="pt-14" id="actvityzone">
-        <h3
-          class="text-center font-raleway text-[1.125rem] font-extrabold leading-[130%] mb-6"
-        >
-          Activity Zone
-        </h3>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="flex justify-center">
-            <Image src={ActivtyPlay} alt="Play Zone" class="mt-0 mb-4" />
-          </div>
-          <div class="flex justify-center">
-            <Image
-              src={ActivtyAutomotive}
-              alt="Automotive Zone"
-              class="mt-0 mb-4"
-            />
-          </div>
-          <div class="flex justify-center">
-            <Image
-              src={ActivtyWorkshop}
-              alt="Workshop Zone"
-              class="mt-0 mb-4"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- CTA -->
-    <section
-      class="flex flex-col items-center md:max-w-lg mx-auto px-12 mt-12 mb-24"
-    >
-      <a
-        href="/tiket"
-        class="block w-full py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
-      >
-        Beli Tiket
-      </a>
-    </section>
-  </main>
 </Layout>
