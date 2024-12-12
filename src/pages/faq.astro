@@ -1,28 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import NavbarGeneral from "../components/NavbarGeneral.jsx";
+import Tabs from "../components/tabs.jsx";
 import "../styles/global.css";
 import Accordion from "../components/Accordion.jsx";
 
-const faqData = [
-  {
-    question: "MyPertamina Fair itu acara apa?",
-    answer:
-      "MyPertamina Fair merupakan acara dimana kamu dapat menukarkan poin yang sudah kamu kumpulkan selama 1 Tahun, kamu bisa tukar di Bazaar atau kamu bisa membeli tiket untuk nonton konser menggunakan poin.",
-  },
-  {
-    question: "Kapan dan dimana acara berlangsung?",
-    answer:
-      "MyPertamina Fair akan diadakan pada hari Sabtu dan Minggu 21 – 22 Desember 2024.",
-  },
-  {
-    question: "Siapa saja yang bisa masuk ke MyPertamina Fair?",
-    answer: "Semua orang yang telah mendownload MyPertamina apps.",
-  },
-  {
-    question: "Bagaimana cara untuk menonton MyPertamina Fair Konser?",
-    answer: "Kamu harus redeem poin untuk masuk ke tempat konser.",
-  },
+
+const tabs = [
+  { label: "ABOUT", content: "aboutContent" },
+  { label: "TIKETS", content: "asdads"  },
 ];
 ---
 
@@ -38,9 +24,11 @@ const faqData = [
         FAQ
       </h1>
       <div
-        class="bg-white py-8 px-4 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+        class="bg-white pb-8 pt-2 px-4 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
       >
-        <Accordion data={faqData} client:load />
+        <Tabs tabs={tabs} client:load/>
+
+        <!--<Accordion data={faqData} client:load />-->
       </div>
     </section>
   </main>

@@ -35,9 +35,7 @@ const Accordion = ({ data }) => {
           </div>
           {activeIndex === index && (
             <div className="w-full">
-              <p className="text-[1rem] md:text-[1rem] text-neutral-600 leading-[150%] mt-0 mb-4">
-                {item.answer}
-              </p>
+              <div className="text-[1rem] md:text-[1rem] text-neutral-600 leading-[150%] mt-0 mb-4" dangerouslySetInnerHTML={{ __html: item.answer }}></div>
             </div>
           )}
         </div>
