@@ -16,7 +16,7 @@ import ArtistNdarboy from "../assets/ndarboy.png";
 import ActivtyAutomotive from "../assets/auto-zone.jpg";
 import ActivtyPlay from "../assets/play-zone.jpg";
 import ActivtyWorkshop from "../assets/workshop.jpg";
-import LogoSponsor from "../assets/Logo-Sponsor-2-01.png";
+import LogoSponsor from "../assets/Logo-Sponsor.png";
 ---
 
 <Layout title="Festival">
@@ -357,18 +357,11 @@ import LogoSponsor from "../assets/Logo-Sponsor-2-01.png";
                 </div>
             </div>
 
-            <!-- Activity Zone -->
-            <div class="pt-14" id="sponsor">
 
-                <div class="flex justify-center">
-                    <Image src={LogoSponsor} alt="Play Zone" class="mt-0 mb-4"/>
-                </div>
-
-            </div>
         </section>
         <!-- CTA -->
         <section
-                class="flex flex-col items-center md:max-w-lg mx-auto px-12 mt-12 mb-24"
+                class="flex flex-col items-center md:max-w-lg mx-auto px-12 mt-12 mb-20"
         >
             <a
                     href="/tiket"
@@ -377,6 +370,22 @@ import LogoSponsor from "../assets/Logo-Sponsor-2-01.png";
                 Beli Tiket
             </a>
         </section>
+
+
+
+        <!-- Activity Zone -->
+        <div class="mb-12" id="sponsor">
+            <h3
+                    class="text-center font-raleway text-[1.125rem] font-extrabold leading-[130%] mb-4"
+            >
+                In Partnership With:
+            </h3>
+
+            <div class="flex justify-center">
+                <Image src={LogoSponsor} alt="Play Zone" class="mt-0 mb-4 lg:px-32 px-4"/>
+            </div>
+
+        </div>
 
         <!--<div class="pt-10" id="sponsor">-->
         <!--    &lt;!&ndash;<h3&ndash;&gt;-->
