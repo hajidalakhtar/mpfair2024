@@ -68,8 +68,8 @@ const HamburgerMenu = () => {
                         </li>
                         <li className="w-full">
                             <a
-                                href="/coming-soon"
-                                // href="/venue-map"
+                                // href="/coming-soon"
+                                href="/venue-map"
                                 className="block w-full py-3 bg-white hover:bg-neutral-100 active:bg-neutral-200 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
                             >
                                 Venue Map
