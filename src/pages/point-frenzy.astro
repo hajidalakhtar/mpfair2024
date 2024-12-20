@@ -4,70 +4,101 @@ import Image from "astro/components/Image.astro";
 import "../styles/global.css";
 import NavbarGeneral from "../components/NavbarGeneral.jsx";
 import DiskonSpesial from "../assets/diskon-spesial-card.png";
+import MapL1 from "../assets/giant-map.jpg";
 ---
 
 <Layout title="Point Frenzy">
-  <NavbarGeneral client:load />
-  <div class="fixed-bg"></div>
+    <NavbarGeneral client:load/>
+    <div class="fixed-bg"></div>
 
-  <main
-    class="prose prose-lg overflow-x-hidden pt-14 mt-16 mb-24 max-w-4xl mx-auto"
-  >
-    <!-- Artist Section -->
-    <section id="artist">
-      <div class="px-4">
-        <h1
-          class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
+    <main
+            class="prose prose-lg overflow-x-hidden pt-14 mt-16 mb-24 max-w-4xl mx-auto"
+    >
+        <!-- Artist Section -->
+        <section id="artist">
+            <div class="px-4">
+                <h1
+                        class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
+                >
+                    Point Frenzy
+                </h1>
+                <p class="text-center text-[1rem] leading-[150%]">
+                    Kamu berkesempatan untuk mendapat diskon di jam spesial tetap pantau
+                    page ini ya.
+                </p>
+            </div>
+
+            <!-- Diskon Spesial -->
+            <div class="md:max-w-lg mx-auto animate__animated animate__tada">
+                <Image src={DiskonSpesial} alt="Diskon Spesial" class="px-4 pb-6"/>
+            </div>
+
+            <div class="grid grid-cols-3 mb-6">
+                <div class="flex justify-center animate__animated animate__tada ">
+                    <button onclick="document.getElementById('modal').classList.remove('hidden');">
+                        <img src="/Point_Frenzy_A1.jpg" alt="Tenant" class="w-24 my-0 border-2 border-black"/>
+                    </button>
+
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0"/>
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0"/>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 mb-6">
+                <div class="flex justify-center animate__animated animate__tada">
+                    <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0"/>
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0"/>
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0"/>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 mb-6">
+                <div class="flex justify-center animate__animated animate__tada">
+                    <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0"/>
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0"/>
+                </div>
+                <div class="flex justify-center animate__animated animate__tada">
+                    <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0"/>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0"/>
+            </div>
+        </section>
+        <div
+                id="modal"
+                class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center hidden z-50 p-4 overflow-auto"
         >
-          Point Frenzy
-        </h1>
-        <p class="text-center text-[1rem] leading-[150%]">
-          Kamu berkesempatan untuk mendapat diskon di jam spesial tetap pantau
-          page ini ya.
-        </p>
-      </div>
-
-      <!-- Diskon Spesial -->
-      <div class="md:max-w-lg mx-auto animate__animated animate__tada">
-        <Image src={DiskonSpesial} alt="Diskon Spesial" class="px-4 pb-6" />
-      </div>
-
-      <div class="grid grid-cols-3 mb-6">
-        <div class="flex justify-center animate__animated animate__tada">
-          <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
+            <div
+                    class="bg-white w-full h-full relative rounded-lg overflow-auto"
+            >
+                <button
+                        class="absolute top-4 right-4 text-black"
+                        onclick="document.getElementById('modal').classList.add('hidden');"
+                >
+                    <img src="/close-menu.svg" alt="Close Icon" class="h-8 my-0"/>
+                </button>
+                <div class="px-8 py-6">
+                    <h2 class="text-2xl font-bold mb-4 my-0">Point Frenzy A1</h2>
+                    <div>
+                        <img src="/Point_Frenzy_A1.jpg" />
+                        <!--<Image src={MapL1} alt="Map"/>-->
+                        <!--<ol>-->
+                        <!--  <li class="mt-0 mb-1">Gate</li>-->
+                        <!--  <li class="mt-0 mb-1">Screening Are</li>-->
+                        <!--  <li class="mt-0 mb-1">Big Store Truck</li>-->
+                        <!--</ol>-->
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
-        </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
-        </div>
-      </div>
-      <div class="grid grid-cols-3 mb-6">
-        <div class="flex justify-center animate__animated animate__tada">
-          <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
-        </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
-        </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
-        </div>
-      </div>
-      <div class="grid grid-cols-3 mb-6">
-        <div class="flex justify-center animate__animated animate__tada">
-          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
-        </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
-        </div>
-        <div class="flex justify-center animate__animated animate__tada">
-          <img src="tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
-        </div>
-      </div>
-      <div class="flex justify-center">
-        <img src="/tenants-coming-soon.svg" alt="Tenant" class="w-24 my-0" />
-      </div>
-    </section>
-  </main>
+    </main>
 </Layout>
