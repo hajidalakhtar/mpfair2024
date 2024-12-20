@@ -5,6 +5,7 @@ import NavbarHome from "../components/NavbarHome.jsx";
 import "../styles/global.css";
 import HeroFig from "../assets/hero-image-new.png";
 import CountDown from "../components/Countdown";
+import LogoSponsor from "../assets/Logo-Sponsor.png";
 
 const TheDay = new Date("Dec 21, 2024").getTime();
 ---
@@ -58,7 +59,7 @@ const TheDay = new Date("Dec 21, 2024").getTime();
 
     <!-- Information -->
     <section>
-        <div id="information" class="px-8 mb-32 mt-28">
+        <div id="information" class="px-8 mb-20 mt-28">
             <h2
                     class="text-center font-raleway text-[1.5rem] font-black leading-[130%] mb-12"
             >
@@ -165,6 +166,17 @@ const TheDay = new Date("Dec 21, 2024").getTime();
             </div>
         </div>
     </section>
+
+    <div class="lg:px-32" id="sponsor">
+        <h2
+                class="text-center font-raleway text-[1.2rem] font-black leading-[130%] mb-4"
+        >
+            In Partnership With
+        </h2>
+        <div class="flex justify-center">
+            <Image src={LogoSponsor} alt="Play Zone" class="mt-0 mb-4 lg:px-32 px-4"/>
+        </div>
+    </div>
 
 
 </Layout>
