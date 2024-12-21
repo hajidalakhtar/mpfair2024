@@ -42,48 +42,56 @@ const HamburgerMenu = () => {
           <ul className="space-y-4 text-lg font-cabin w-full">
             <li className="w-full">
               <a
-                href="/tiket"
-                className="block w-full py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                  href="/tiket"
+                  className="block w-full py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Beli Tiket
               </a>
             </li>
             <li className="w-full">
               <a
-                href="/point-frenzy"
-                className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                  href="/point-frenzy"
+                  className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Point Frenzy
               </a>
             </li>
             <li className="w-full">
               <a
-                href="/festival"
-                className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                  href="/program"
+                  className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+              >
+                Program
+              </a>
+            </li>
+            <li className="w-full">
+              <a
+                  href="/festival"
+                  className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Festival
               </a>
             </li>
             <li className="w-full">
               <a
-                href="/venue-map"
-                className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                  href="/venue-map"
+                  className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Venue Map
               </a>
             </li>
             <li className="w-full">
               <a
-                href="/faq"
-                className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                  href="/faq"
+                  className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 FAQ
               </a>
             </li>
             <li className="w-full">
               <a
-                href="/contact"
-                className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
+                  href="/contact"
+                  className="block w-full py-3 bg-white hover:bg-neutral-100 text-center text-black rounded-full no-underline font-raleway font-bold text-[1.125rem] leading-[130%] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"
               >
                 Contact
               </a>

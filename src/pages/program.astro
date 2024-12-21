@@ -1,0 +1,204 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
+import "../styles/global.css";
+import NavbarGeneral from "../components/NavbarGeneral.jsx";
+import DiskonSpesial from "../assets/diskon-spesial-card.png";
+import MapL1 from "../assets/giant-map.jpg";
+---
+
+<Layout title="Point Frenzy">
+    <NavbarGeneral client:load/>
+    <div class="fixed-bg"></div>
+
+    <main
+            class="prose prose-lg overflow-x-hidden pt-14 mt-16 mb-24 max-w-4xl mx-auto"
+    >
+        <!-- Artist Section -->
+        <section id="artist">
+            <div class="px-4">
+                <h1
+                        class="text-center font-raleway text-[1.5rem] font-black leading-[130%]"
+                >
+                    Program
+                </h1>
+                <!--<p class="text-center text-[1rem] leading-[150%]">-->
+                <!--    Kamu berkesempatan untuk mendapat diskon di jam spesial tetap pantau-->
+                <!--    page ini ya.-->
+                </p>
+            </div>
+
+            <!--&lt;!&ndash; Diskon Spesial &ndash;&gt;-->
+            <!--<div class="md:max-w-lg mx-auto animate__animated animate__tada">-->
+            <!--    <Image src={DiskonSpesial} alt="Diskon Spesial" class="px-4 pb-6"/>-->
+            <!--</div>-->
+
+            <section id="festival" class=" px-4 mb-48">
+
+                <div class="lg:flex mx-auto justify-center">
+                    <div
+                            class=" lg:w-96  lg:mx-3  w-full  bg-white py-4 px-2 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)] mt-8 mb-8"
+                    >
+                        <div class="px-4">
+                            <!--<p class="my-0 text-lg font-extrabold">Lantai 1</p>-->
+                        </div>
+                        <div>
+                            <img
+                                    src={"/WORKSHOP.jpg"}
+                                    class="max-w-full mt-0 mb-4"
+                                    alt="Venue Map Lt1"
+                                    loading="eager"
+                            />
+                        </div>
+                        <div class="flex justify-center py-2">
+                            <!-- Modal Trigger -->
+                            <a
+                                    href="#"
+                                    class="px-6 py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
+                                    onclick="document.getElementById('modal').classList.remove('hidden');"
+                            >
+                                Lihat Detail
+                            </a>
+
+                            <!-- Modal -->
+                            <div
+                                    id="modal"
+                                    class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center hidden z-50 p-4 overflow-auto"
+                            >
+                                <div
+                                        class="bg-white w-full h-full relative rounded-lg overflow-auto"
+                                >
+                                    <button
+                                            class="absolute top-4 right-4 text-black"
+                                            onclick="document.getElementById('modal').classList.add('hidden');"
+                                    >
+                                        <img src="/close-menu.svg" alt="Close Icon" class="h-8 my-0"/>
+                                    </button>
+                                    <div class="px-8 py-6">
+                                        <!--<h2 class="text-2xl font-bold mb-4 my-0">Point Frenzy A1</h2>-->
+                                        <div>
+                                            <img src={"./Point_Frenzy_A1.jpg"} alt="Map"/>
+                                            <!--<ol>-->
+                                            <!--  <li class="mt-0 mb-1">Gate</li>-->
+                                            <!--  <li class="mt-0 mb-1">Screening Are</li>-->
+                                            <!--  <li class="mt-0 mb-1">Big Store Truck</li>-->
+                                            <!--</ol>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                            class=" lg:w-96  lg:mx-3  w-full  bg-white py-4 px-2 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)] mt-8 mb-8"
+                    >
+                        <div class="px-4">
+                            <!--<p class="my-0 text-lg font-extrabold">Lantai 1</p>-->
+                        </div>
+                        <div>
+                            <img
+                                    src={"/SPECIAL_BIDDING.jpg"}
+                                    class="max-w-full mt-0 mb-4"
+                                    alt="Venue Map Lt1"
+                                    loading="eager"
+                            />
+                        </div>
+                        <div class="flex justify-center py-2">
+                            <!-- Modal Trigger -->
+                            <a
+                                    href="#"
+                                    class="px-6 py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"
+                                    onclick="document.getElementById('modal').classList.remove('hidden');"
+                            >
+                                Lihat Detail
+                            </a>
+
+                            <!-- Modal -->
+                            <div
+                                    id="modal"
+                                    class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center hidden z-50 p-4 overflow-auto"
+                            >
+                                <div
+                                        class="bg-white w-full h-full relative rounded-lg overflow-auto"
+                                >
+                                    <button
+                                            class="absolute top-4 right-4 text-black"
+                                            onclick="document.getElementById('modal').classList.add('hidden');"
+                                    >
+                                        <img src="/close-menu.svg" alt="Close Icon" class="h-8 my-0"/>
+                                    </button>
+                                    <div class="px-8 py-6">
+                                        <!--<h2 class="text-2xl font-bold mb-4 my-0">Point Frenzy A1</h2>-->
+                                        <div>
+                                            <img src={"./Point_Frenzy_A1.jpg"} alt="Map"/>
+                                            <!--<ol>-->
+                                            <!--  <li class="mt-0 mb-1">Gate</li>-->
+                                            <!--  <li class="mt-0 mb-1">Screening Are</li>-->
+                                            <!--  <li class="mt-0 mb-1">Big Store Truck</li>-->
+                                            <!--</ol>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--&lt;!&ndash; Lantai 2 &ndash;&gt;-->
+                <!--<div-->
+                <!--  class="bg-white py-4 px-2 rounded-lg shadow-[0px_1px_2px_0px_rgba(0,0,0,0.30),0px_1px_3px_1px_rgba(0,0,0,0.15)]"-->
+                <!--&gt;-->
+                <!--  <div class="px-4">-->
+                <!--    <p class="my-0 text-lg font-extrabold">Lantai 2</p>-->
+                <!--  </div>-->
+                <!--  <div>-->
+                <!--    <Image-->
+                <!--      src={MapL2}-->
+                <!--      class="max-w-full mx-auto mt-0 mb-4"-->
+                <!--      alt="Venue Map Lt1"-->
+                <!--      loading="eager"-->
+                <!--    />-->
+                <!--  </div>-->
+                <!--  <div class="flex justify-center py-2">-->
+                <!--    &lt;!&ndash; Modal Trigger &ndash;&gt;-->
+                <!--    <a-->
+                <!--      href="#"-->
+                <!--      class="px-6 py-3 bg-pertamina-red-500 hover:bg-pertamina-red-600 active:bg-pertamina-red-700 text-center text-white rounded-full no-underline font-raleway font-extrabold text-[1rem] leading-[130%] shadow-[0px_6px_10px_4px_rgba(0,0,0,0.15),0px_2px_3px_0px_rgba(0,0,0,0.30)]"-->
+                <!--      onclick="document.getElementById('modal2').classList.remove('hidden');"-->
+                <!--    >-->
+                <!--      Lihat Detail-->
+                <!--    </a>-->
+
+                <!--    &lt;!&ndash; Modal &ndash;&gt;-->
+                <!--    <div-->
+                <!--      id="modal2"-->
+                <!--      class="fixed inset-0 bg-black bg-opacity-50 items-center justify-center hidden z-50 p-4"-->
+                <!--    >-->
+                <!--      <div class="bg-white w-full h-full relative rounded-lg">-->
+                <!--        <button-->
+                <!--          class="absolute top-4 right-4 text-black"-->
+                <!--          onclick="document.getElementById('modal2').classList.add('hidden');"-->
+                <!--        >-->
+                <!--          <img src="/close-menu.svg" alt="Close Icon" class="h-8 my-0" />-->
+                <!--        </button>-->
+                <!--        <div class="px-8 py-6">-->
+                <!--          <h2 class="text-2xl font-bold mb-4 my-0">Lantai 2</h2>-->
+                <!--          <div>-->
+                <!--            <Image src={MapL2} alt="Map" />-->
+                <!--            <ol>-->
+                <!--              <li class="mt-0 mb-1">Gate</li>-->
+                <!--              <li class="mt-0 mb-1">Screening Are</li>-->
+                <!--              <li class="mt-0 mb-1">Big Store Truck</li>-->
+                <!--            </ol>-->
+                <!--          </div>-->
+                <!--        </div>-->
+                <!--      </div>-->
+                <!--    </div>-->
+                <!--  </div>-->
+                <!--</div>-->
+            </section>
+
+        </section>
+
+    </main>
+</Layout>
